@@ -67,7 +67,7 @@
         {% endif %}
         {% if model.older_link -%}
           <li class="next item">
-            <h4 class="item-heading">Next Post <a href="{{ model.older_link.value | relative_ling }}">&raquo;</a></h4>
+            <h4 class="item-heading">Next Post <a href="{{ model.older_link.value | relative_link }}">&raquo;</a></h4>
             <a href="{{ model.older_link.value | relative_link }}">{{ model.older_name.value }}</a>
           </li>
         {%- endif -%}

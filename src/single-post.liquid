@@ -28,7 +28,7 @@
       <h4>
         Categorized &nbsp;
         {% for cat_id in post.category_ids -%}
-          {% assign cat = categories | where: "id", cat_id | first %}
+          {% assign cat = categories | where: "Id", cat_id | first %}
           <span class="no-wrap">
             <i class="fa fa-folder-open-o" title="Category"></i>
             <a href="{{ cat | category_link }}" title="Categorized under &ldquo;{{ cat.name | escape }}&rdquo;">

@@ -1,6 +1,10 @@
 djs = {
 
-  displayVotd: res => {
+  /**
+   * Display the verse/passage of the day (callback for Bible Gateway API call)
+   * @param {{votd: {text: string, permalink: string, display_ref: string, copyrightlink: string}}} res The callback response
+   */
+  displayVotd (res) {
     const votd = res.votd
     const votdItem = document.querySelector('.votd-item')
     votdItem.querySelector('.verse').innerHTML = votd.text

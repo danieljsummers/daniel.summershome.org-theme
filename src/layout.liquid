@@ -79,11 +79,11 @@
               </a>
             </span>
             <div>
-              2021 Season &mdash; <strong>NR</strong><br>
+              2022 Ranking &mdash; <strong>NR</strong><br>
               <small>
-                (7-6 &bull; 4-4 SEC/3<sup>rd</sup> East)<br><br>
-                Last &mdash; L* (45-48) vs. Purdue<br>
-                <em>Music City Bowl</em>
+                <!-- (0-0 &bull; 0-0 SEC/1<sup>st</sup> East) --><br><br>
+                Next &ndash; vs. Ball State &bull; 9/1
+                <!-- Last &ndash; R (0-0) vs. Ball State -->
               </small>
             </div>
           </div>
@@ -98,10 +98,11 @@
               </a>
             </span>
             <div>
-              2021 Season &mdash; <strong>NR</strong><br>
+              2022 Ranking &mdash; <strong>NR</strong><br>
               <small>
-                (3-9 &bull; 2-6 MWC/5<sup>th</sup> Mountain)<br><br>
-                Last &mdash; L (10-52) at Nevada
+                <!-- (0-0 &bull; 0-0 MWC/1<sup>st</sup> Mountain) --><br><br>
+                Next &ndash; at <sup>8 </sup>Michigan &bull; 9/3
+                <!-- Last &ndash; R (0-0) at <sup>8</sup>Michigan -->
               </small>
             </div>
           </div>
@@ -138,8 +139,9 @@
         <a href="https://bitbadger.solutions" title="Building the site you need to ensure your success!">
           Bit Badger Solutions
         </a>
-        &bull; Powered by <a href="https://github.com/bit-badger/myWebLog/tree/v2">myWebLog</a> &bull;
-        {% if logged_on %}
+        &bull; Powered by <a href="https://github.com/bit-badger/myWebLog" target="_blank" rel="noopener">myWebLog</a>
+        &bull;
+        {% if is_logged_on %}
           <a href="{{ "admin/dashboard" | relative_link }}">Dashboard</a>
         {% else %}
           <a href="{{ "user/log-on" | relative_link }}">Log On</a>
